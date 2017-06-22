@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_01_SwiftPracticeDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3h-ju-BPZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42N-14-VsV">
+                                        <rect key="frame" x="15" y="20" width="345" height="227"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eq9-GE-aro">
+                                        <rect key="frame" x="314" y="20" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="重置">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="testDemoButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OGR-By-ah8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.28035481770833331" green="0.2402072482638889" blue="0.80192823223039211" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="42N-14-VsV" firstAttribute="leading" secondItem="v3h-ju-BPZ" secondAttribute="leading" constant="15" id="Ybj-VV-R0I"/>
+                                    <constraint firstItem="42N-14-VsV" firstAttribute="top" secondItem="v3h-ju-BPZ" secondAttribute="top" constant="20" id="baE-ls-rlI"/>
+                                    <constraint firstAttribute="bottom" secondItem="42N-14-VsV" secondAttribute="bottom" constant="15" id="enh-Mn-4d7"/>
+                                    <constraint firstAttribute="trailing" secondItem="42N-14-VsV" secondAttribute="trailing" constant="15" id="fko-YA-Ota"/>
+                                    <constraint firstAttribute="height" constant="262" id="rv0-VE-AWF"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izo-8Q-PhW">
+                                <rect key="frame" x="187.5" y="262" width="187.5" height="405"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.45098039220000002" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="暂停">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testDemoButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aey-iE-L37"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUU-3X-IKr">
+                                <rect key="frame" x="0.0" y="262" width="187.5" height="405"/>
+                                <color key="backgroundColor" red="0.0" green="0.7843137255" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="开始">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testDemoButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cHk-RJ-eah"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v3h-ju-BPZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1cC-Em-1Ih"/>
+                            <constraint firstAttribute="trailing" secondItem="Izo-8Q-PhW" secondAttribute="trailing" id="5Dk-X2-3Qh"/>
+                            <constraint firstItem="v3h-ju-BPZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8Ti-EM-Xd2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FUU-3X-IKr" secondAttribute="bottom" id="Mm0-mi-8xv"/>
+                            <constraint firstItem="Izo-8Q-PhW" firstAttribute="height" secondItem="FUU-3X-IKr" secondAttribute="height" id="QpR-f2-djW"/>
+                            <constraint firstItem="Izo-8Q-PhW" firstAttribute="centerY" secondItem="FUU-3X-IKr" secondAttribute="centerY" id="UbL-RR-j2E"/>
+                            <constraint firstAttribute="trailing" secondItem="v3h-ju-BPZ" secondAttribute="trailing" id="cuK-ix-q8N"/>
+                            <constraint firstItem="FUU-3X-IKr" firstAttribute="top" secondItem="v3h-ju-BPZ" secondAttribute="bottom" id="ddI-0j-SGF"/>
+                            <constraint firstItem="FUU-3X-IKr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ku0-r2-n0e"/>
+                            <constraint firstItem="Izo-8Q-PhW" firstAttribute="leading" secondItem="FUU-3X-IKr" secondAttribute="trailing" id="rCS-Hu-mig"/>
+                            <constraint firstItem="Izo-8Q-PhW" firstAttribute="width" secondItem="FUU-3X-IKr" secondAttribute="width" id="y8H-DQ-zK3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="42N-14-VsV" id="ahn-hp-Gwj"/>
+                        <outlet property="resetBtn" destination="Eq9-GE-aro" id="Iai-da-H7Y"/>
+                        <outlet property="startBtn" destination="FUU-3X-IKr" id="kr9-PK-li4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
