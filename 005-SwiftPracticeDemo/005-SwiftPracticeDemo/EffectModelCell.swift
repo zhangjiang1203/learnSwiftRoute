@@ -32,6 +32,7 @@ class EffectModelCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         //设置控件
         ViewW = frame.size.width
         effectImageView = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width:ViewW, height: 350))
@@ -54,7 +55,6 @@ class EffectModelCell: UICollectionViewCell {
         effectSubTitleLabel.textColor = UIColor.init(colorLiteralRed: 0.1, green: 0.1, blue: 0.1, alpha: 1)
         self.contentView.addSubview(effectSubTitleLabel)
     }
-    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
