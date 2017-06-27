@@ -141,9 +141,7 @@ class SomeClass{
             x=200
         }
     }
-    
 }
-
 //自动闭包 
 var array = ["I","have","a","apple"]
 print(array.count)
