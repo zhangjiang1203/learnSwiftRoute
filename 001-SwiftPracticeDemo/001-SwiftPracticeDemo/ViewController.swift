@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         infoLabel.text = String(count)
         
     }
-
     
     @IBAction func testDemoButtonAction(_ sender: UIButton) {
         
@@ -47,9 +46,15 @@ class ViewController: UIViewController {
             break
         case 3:
             isPlay = false
-            myTimer.invalidate()
-            count = 0.0
-            self.infoLabel.text = "0.0"
+            sender.isSelected = !sender.isSelected;
+            if sender.isSelected {
+                sender.setTitle("暂停", for: .normal)
+                myTimer.fireDate = NSDate.distantPast
+            }else{
+                sender.setTitle("继续", for: .normal)
+                // 暂停定时器
+                myTimer.fireDate = NSDate.distantFuture
+            }
             break
         default:
             break
