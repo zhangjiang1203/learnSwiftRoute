@@ -21,21 +21,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="这就是我的社会，我就是王道，你说的，你做的，你想的都要在这个框架之中，无规矩不成方圆，人都是活在规矩中的。人与人之间的靠的是交流，不论是眼神，肢体都是人们传达自己思想的一种方式。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GYe-lG-olt">
-                                <rect key="frame" x="20" y="40" width="335" height="200"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationBGImage" translatesAutoresizingMaskIntoConstraints="NO" id="dMR-DQ-nl1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AFv-Gb-X3I">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7HM-cJ-x3N">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KhZ-zb-PAc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="IRE-RJ-xsm">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GYe-lG-olt">
+                                <rect key="frame" x="20" y="40" width="335" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="SbO-jy-qFa"/>
+                                    <constraint firstAttribute="height" constant="300" id="vzl-Cj-xNJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <string key="text">《咏苎萝山》
+年代: 唐 作者: 李白 
+西施越溪女，出自苎萝山。
+秀色掩今古，荷花羞玉颜。
+浣纱弄碧水，自与清波闲。
+皓齿信难开，沉吟碧云间。
+勾践徵绝艳，扬蛾入吴关。
+提携馆娃宫，杳渺讵可攀。
+一破夫差国，千秋竟不还。</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfs-lg-kQb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfs-lg-kQb">
                                 <rect key="frame" x="126" y="551" width="122" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="NkR-wK-SnM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="改变字体">
-                                    <color key="titleColor" red="0.0" green="0.006076388888888889" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="changeFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vDn-7d-g4J"/>
@@ -44,9 +80,20 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="AFv-Gb-X3I" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5Vy-6d-nXz"/>
+                            <constraint firstAttribute="trailing" secondItem="dMR-DQ-nl1" secondAttribute="trailing" id="7w6-En-Ex1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dMR-DQ-nl1" secondAttribute="bottom" id="Ek8-6V-sr5"/>
+                            <constraint firstItem="dMR-DQ-nl1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KaA-gQ-Rup"/>
+                            <constraint firstItem="Dfs-lg-kQb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="126" id="OIV-np-Orj"/>
                             <constraint firstAttribute="trailing" secondItem="GYe-lG-olt" secondAttribute="trailing" constant="20" id="RPz-95-hVi"/>
                             <constraint firstItem="GYe-lG-olt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Rw0-C9-MmM"/>
+                            <constraint firstItem="AFv-Gb-X3I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZUV-tj-S3y"/>
                             <constraint firstItem="GYe-lG-olt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="cjy-WB-eJg"/>
+                            <constraint firstAttribute="trailing" secondItem="AFv-Gb-X3I" secondAttribute="trailing" id="czK-dW-G5o"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dfs-lg-kQb" secondAttribute="bottom" constant="67" id="r8U-Fa-fFa"/>
+                            <constraint firstItem="dMR-DQ-nl1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wVh-BZ-J1b"/>
+                            <constraint firstAttribute="trailing" secondItem="Dfs-lg-kQb" secondAttribute="trailing" constant="127" id="xsL-F7-Ssx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AFv-Gb-X3I" secondAttribute="bottom" id="yz3-Og-guL"/>
                         </constraints>
                     </view>
                     <connections>
@@ -59,4 +106,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="locationBGImage" width="750" height="1334"/>
+    </resources>
 </document>
