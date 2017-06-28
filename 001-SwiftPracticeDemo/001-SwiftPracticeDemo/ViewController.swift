@@ -33,6 +33,8 @@ class ViewController: UIViewController {
             isPlay = false
             myTimer.invalidate()
             self.infoLabel.text = "0.0"
+            let button:UIButton = self.view.viewWithTag(3) as! UIButton
+            button.isSelected = true
             count = 0.0
             break
         case 2:
@@ -45,15 +47,13 @@ class ViewController: UIViewController {
             }
             break
         case 3:
-            isPlay = false
-            sender.isSelected = !sender.isSelected;
-            if sender.isSelected {
-                sender.setTitle("暂停", for: .normal)
-                myTimer.fireDate = NSDate.distantPast
-            }else{
-                sender.setTitle("继续", for: .normal)
-                // 暂停定时器
-                myTimer.fireDate = NSDate.distantFuture
+            if isPlay{
+                sender.isSelected = !sender.isSelected;
+                if sender.isSelected {
+                    myTimer.fireDate = NSDate.distantPast
+                }else{
+                    myTimer.fireDate = NSDate.distantFuture
+                }
             }
             break
         default:
