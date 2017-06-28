@@ -10,40 +10,40 @@
 学习环境 xcode8.3 swift3.0
 
 
-###项目1 定时器的简单使用
+##项目1 定时器的简单使用
 
 添加定时器，控制定时器的暂停和继续，
 
 ![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/001-SwiftPracticeDemo/swift-001.gif)
 
-###项目2 修改字体
+##项目2 修改字体
 
 添加额外的字体 在项目中点击按钮进行替换
 
 ![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/002-SwiftPracticeDemo/swift-002.gif)
 
-###项目3 tableview的使用和自定义cell以及视频播放
+##项目3 tableview的使用和自定义cell以及视频播放
 
 自定义cell 添加AVFoundation框架 进行视频播放
 
 ![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/003-SwiftPracticeDemo/swift-003.gif)
 
 
-###项目4 scrollView的使用和自定义相机以及拍照灯光选择，前后摄像头切换，拍照
+##项目4 scrollView的使用和自定义相机以及拍照灯光选择，前后摄像头切换，拍照
 
 自定义相机 scrollView滚动添加视图 进行拍照
 
 ![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/004-SwiftPracticeDemo/swift-004.gif)
 
 
-###项目5 collectionView的使用和自定义collectionViewcell
+##项目5 collectionView的使用和自定义collectionViewcell
 
 自定义collectionViewcel collectionView的使用
 
 ![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/005-SwiftPracticeDemo/swift-005.gif)
 
 
-###项目6 CLLocation的使用和反地理编码
+##项目6 CLLocation的使用和反地理编码
 
 根据定位信息获取经纬度 反地理编码获取地址信息
 
