@@ -48,3 +48,10 @@
 根据定位信息获取经纬度 反地理编码获取地址信息
 
 ![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/006-SwiftPracticeDemo/swift-006.gif)
+
+
+## 项目7 tableview的刷新功能，每次刷新之后滚动到最底部
+
+每次刷新数据在数组中添加五个数据，并滚动到tableview的最底部
+
+![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/007-SwiftPracticeDemo/swift-007.gif)
