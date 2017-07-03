@@ -55,3 +55,9 @@
 每次刷新数据在数组中添加五个数据，并滚动到tableview的最底部
 
 ![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/007-SwiftPracticeDemo/swift-007.gif)
+
+## 项目8 图层渐变 音频播放 图层动画
+
+每次刷新数据在数组中添加五个数据，并滚动到tableview的最底部
+
+![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/007-SwiftPracticeDemo/swift-008.gif)
