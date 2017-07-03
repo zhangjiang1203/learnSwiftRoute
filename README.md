@@ -58,6 +58,6 @@
 
 ## 项目8 图层渐变 音频播放 图层动画
 
-每次刷新数据在数组中添加五个数据，并滚动到tableview的最底部
+添加渐变图层 定时器改变背景颜色 播放音频 添加图层动画
 
 ![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/008-SwiftPracticeDemo/swift-008.gif)
