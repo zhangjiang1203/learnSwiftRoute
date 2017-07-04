@@ -61,3 +61,10 @@
 添加渐变图层 定时器改变背景颜色 播放音频 添加图层动画
 
 ![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/008-SwiftPracticeDemo/swift-008.gif)
+
+
+## 项目9 scrollView添加图片的放大和缩小功能 
+
+添加scrollView scrollView的代理方法 实现放大缩小修改scrollView的contentInset属性
+
+![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/009-SwiftPracticeDemo/swift-009.gif)
