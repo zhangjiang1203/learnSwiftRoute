@@ -68,3 +68,10 @@
 添加scrollView scrollView的代理方法 实现放大缩小修改scrollView的contentInset属性
 
 ![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/009-SwiftPracticeDemo/swift-009.gif)
+
+
+## 项目10 使用AVplayer和avplayerLayer进行视频播放 
+
+登录界面背景视频播放 添加视频循环播放功能
+
+![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/010-SwiftPracticeDemo/swift-010.gif)
