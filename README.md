@@ -75,3 +75,10 @@
 登录界面背景视频播放 添加视频循环播放功能
 
 ![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/010-SwiftPracticeDemo/swift-010.gif)
+
+
+## 项目11 登陆动画的简单实现 
+
+简单是现实了登陆界面的显示动画
+
+![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/011-SwiftPracticeDemo/swift-011.gif)
