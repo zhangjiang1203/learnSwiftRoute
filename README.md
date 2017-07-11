@@ -82,3 +82,9 @@
 简单是现实了登陆界面的显示动画
 
 ![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/011-SwiftPracticeDemo/swift-011.gif)
+
+## 项目12 实现tableview刷新动画 
+
+实现tableview的刷新动画，添加了四个方向的动画，设置刷新时间和每个cell之间的刷新间隔即可
+
+![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/012-SwiftPracticeDemo/swift-012.gif)
