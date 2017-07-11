@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BDo-nf-gdu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--tableViewAnimation-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_12_SwiftPracticeDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationBGImage" translatesAutoresizingMaskIntoConstraints="NO" id="VEK-25-bPl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmZ-wE-v6r">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jX1-AL-uHj">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ho5-jn-j0Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="JrF-BS-1as">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wUB-aJ-A3A">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="lGY-8i-6xO"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="euY-zm-H38"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VEK-25-bPl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Uo-ad-GIO"/>
+                            <constraint firstAttribute="trailing" secondItem="dmZ-wE-v6r" secondAttribute="trailing" id="3Ji-O9-rtW"/>
+                            <constraint firstAttribute="trailing" secondItem="VEK-25-bPl" secondAttribute="trailing" id="IvP-4I-qHN"/>
+                            <constraint firstAttribute="trailing" secondItem="wUB-aJ-A3A" secondAttribute="trailing" id="Knc-mF-3RV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wUB-aJ-A3A" secondAttribute="bottom" id="SXp-54-KxL"/>
+                            <constraint firstItem="VEK-25-bPl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aa5-x6-7F4"/>
+                            <constraint firstItem="dmZ-wE-v6r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c3M-rr-ctp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VEK-25-bPl" secondAttribute="bottom" id="cfB-BF-Enr"/>
+                            <constraint firstItem="dmZ-wE-v6r" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jbp-Dw-trG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dmZ-wE-v6r" secondAttribute="bottom" id="tkA-xk-QwH"/>
+                            <constraint firstItem="wUB-aJ-A3A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vFV-1z-v3X"/>
+                            <constraint firstItem="wUB-aJ-A3A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="z8s-MN-vb3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="tableViewAnimation" id="0Ez-qF-IDO"/>
+                    <connections>
+                        <outlet property="myTableView" destination="wUB-aJ-A3A" id="7Tz-NN-cep"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="192.95352323838082"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="put-n6-4Sb">
+            <objects>
+                <navigationController id="BDo-nf-gdu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nvZ-tP-yWs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PdF-gt-ude"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iWD-7U-p1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-380" y="193"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="locationBGImage" width="750" height="1334"/>
+    </resources>
+</document>
