@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "013-SwiftPracticeDemo/ZJSegmentScrollView.swift"
+            timestampString = "521653058.164916"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
+            landmarkName = "segmentButtonClick(sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_13_SwiftPracticeDemo.ZJSegmentScrollView.segmentButtonClick (sender : __ObjC.UIButton) -&gt; ()"
+                  moduleName = "013-SwiftPracticeDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pg/Documents/github%E6%96%87%E4%BB%B6/learnSwiftRoute/013-SwiftPracticeDemo/013-SwiftPracticeDemo/ZJSegmentScrollView.swift"
+                  timestampString = "521652868.268857"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "2689">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_13_SwiftPracticeDemo.ZJSegmentScrollView.(segmentButtonClick (sender : __ObjC.UIButton) -&gt; ()).(closure #3)"
+                  moduleName = "013-SwiftPracticeDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pg/Documents/github%E6%96%87%E4%BB%B6/learnSwiftRoute/013-SwiftPracticeDemo/013-SwiftPracticeDemo/ZJSegmentScrollView.swift"
+                  timestampString = "521652868.27274"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "013-SwiftPracticeDemo/ZJSegmentScrollView.swift"
+            timestampString = "521653058.164916"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "segmentButtonClick(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
