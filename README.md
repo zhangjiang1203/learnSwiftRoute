@@ -89,9 +89,15 @@
 
 ![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/012-SwiftPracticeDemo/swift-012.gif)
 
-## 项目13 实现tableview刷新动画 
+## 项目13 添加自定义的segmentControl 实现点击回调
 
-实现了自定义的segmentControll 添加滚动动画
+添加自定义的segmentControl 实现点击回调
 
 ![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/013-SwiftPracticeDemo/swift-013.gif)
+
+## 项目14 实现波浪滚动效果 两条曲线来回相交 
+
+两条曲线实时修改振幅和偏移 实现波浪效果
+
+![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/014-SwiftPracticeDemo/swift-014.gif)
 

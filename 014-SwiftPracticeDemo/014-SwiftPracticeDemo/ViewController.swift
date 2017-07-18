@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let waveView = ZJDoubleWaveView.init(frame: CGRect.init(x: 0, y: 200, width: ViewW, height: 200))
-        waveView.sinFillColor = UIColor.blue
-        waveView.cosFillColor = UIColor.purple
+        waveView.sinFillColor = UIColor.blue.withAlphaComponent(0.6)
+        waveView.cosFillColor = UIColor.purple.withAlphaComponent(0.7)
         self.view.addSubview(waveView)
     }
 

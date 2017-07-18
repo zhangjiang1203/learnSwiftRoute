@@ -14,7 +14,6 @@ enum KWaveType {
 }
 
 
-
 class ZJDoubleWaveView: UIView {
     
     /// view的尺寸
@@ -138,8 +137,13 @@ class ZJDoubleWaveView: UIView {
     
     //开启定时器
     func startDisplayLink(){
+        /*
+         defaultRunLoopMode 当我们执行其他滚动事件时，timer会默认暂时不监听，当滚动结束的时候会，继续监听。UI触摸事件优先级最高
+         commonModes 始终监听滚动事 和 UI触摸事件优先级一样 不会因为滚动而暂停
+         */
+        
         self.displayLink = CADisplayLink.init(target: self, selector: #selector(updateMyWaveAnimation))
-        self.displayLink.add(to: RunLoop.current, forMode: .defaultRunLoopMode)
+        self.displayLink.add(to: RunLoop.current, forMode: .commonModes)
     }
     
     //停止定时器
