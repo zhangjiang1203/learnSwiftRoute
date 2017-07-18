@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var registerBtn: UIButton!
     
+    
     override var prefersStatusBarHidden: Bool{
         return true
     }
