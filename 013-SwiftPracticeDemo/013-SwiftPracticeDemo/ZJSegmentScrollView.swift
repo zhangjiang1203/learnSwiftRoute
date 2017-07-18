@@ -8,6 +8,16 @@
 
 import UIKit
 
+//定义协议
+protocol ZJSegmentDelegate : NSObjectProtocol {
+    
+    /// 当前点击的按钮
+    ///
+    /// - Parameter index: 当前的返回值
+    func segmentClickAction(index:NSInteger)
+}
+
+
 class ZJSegmentScrollView: UIView ,UIScrollViewDelegate{
     
     var lineWidth:CGFloat = 40{
@@ -66,10 +76,13 @@ class ZJSegmentScrollView: UIView ,UIScrollViewDelegate{
         }
     }
 
+    //代理传值
+    var delegate:ZJSegmentDelegate?
+    
     //定义参数
     fileprivate var viewSize:CGSize!
     fileprivate var myScrollView:UIScrollView!
-    fileprivate var selectedBtn:UIButton!
+    fileprivate var selectedBtn = UIButton()
     fileprivate var lineView:UIView!
     fileprivate var maxWidth:CGFloat = 0
     fileprivate var selectTag = 0
@@ -129,9 +142,8 @@ class ZJSegmentScrollView: UIView ,UIScrollViewDelegate{
         lineView.backgroundColor = selectedColor
         myScrollView.addSubview(lineView)
         
-        selectedBtn = self.viewWithTag(10) as! UIButton
-        segmentButtonClick(sender: selectedBtn)
-        
+        let button = self.viewWithTag(10) as! UIButton
+        segmentButtonClick(sender: button)
     }
     
     
@@ -169,6 +181,32 @@ class ZJSegmentScrollView: UIView ,UIScrollViewDelegate{
 
         }
         selectTag = sender.tag
+        setScrollOffset(index: sender.tag)
+        //代理传值
+        delegate?.segmentClickAction(index: sender.tag-10)
+
+    }
+    
+    //scrollView滚动
+    func setScrollOffset(index:NSInteger) {
+        let button = self.viewWithTag(index)
+        let rect:CGRect = (button?.frame)!
+        let midX = rect.midX
+        var offset = 0.0
+        let contentwidth = myScrollView.contentSize.width
+        let halfWidth = self.bounds.width/2.0
+        
+        if midX < halfWidth  {
+            offset = 0
+        }else if (midX > contentwidth-halfWidth){
+            offset = Double(contentwidth - 2*halfWidth)
+        }else{
+            offset = Double(midX - halfWidth)
+        }
+        
+        UIView.animate(withDuration: animationTime) { 
+            self.myScrollView.setContentOffset(CGPoint.init(x: offset, y: 0), animated: false)
+        }
     }
     
     
