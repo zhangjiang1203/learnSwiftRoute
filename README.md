@@ -108,5 +108,9 @@ Twitter启动动画 实现图层的放大动画 设置图层的锚点和位置
 
 ![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/015-SwiftPracticeDemo/swift-015.gif)
 
+## 项目16 添加了twitter的启动动画 
 
+Twitter启动动画 实现图层的放大动画 设置图层的锚点和位置 
+
+![timeLogo](https://github.com/zhangjiang1203/learnSwiftRoute/blob/master/016-SwiftPracticeDemo/swift-016.gif)
 
